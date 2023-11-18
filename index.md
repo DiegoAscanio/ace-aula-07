@@ -1140,3 +1140,100 @@ Referências Bibliográficas
 - DE ARAÚJO, THABATTA M. A. - SLIDES E NOTAS DE AULAS - Disponível junto à profª Thabatta.
 
 </div>
+
+
+---
+
+
+# Resposta Criticamente Amortecida a um Degrau no Circuito RLC Paralelo
+
+## Introdução
+Definição de circuito RLC paralelo, introdução ao conceito de resposta a um degrau de tensão e sua importância em aplicações práticas.
+
+![Diagrama de um Circuito RLC Paralelo](link-to-image)
+
+
+
+---
+
+
+# Fundamentos do Circuito RLC
+
+## Conceitos Básicos
+- **Resistor (R):** Dissipa energia em forma de calor.
+- **Indutor (L):** Armazena energia no campo magnético.
+- **Capacitor (C):** Armazena energia no campo elétrico.
+
+![Representações Simbólicas de Componentes Elétricos](link-to-image)
+
+
+
+---
+
+
+# Aplicação em um Circuito Específico
+
+## Exemplo Prático
+Descrição de um exemplo prático com valores específicos para R, L e C e a formulação da equação diferencial que modela o circuito.
+
+![Esquemático do Circuito](link-to-image)
+
+
+
+
+---
+
+
+# Compreendendo as Condições Iniciais
+
+## Análise Inicial
+Discussão sobre as condições iniciais do circuito em t=0 e o comportamento imediato da corrente e da tensão.
+
+![Resposta Inicial do Circuito](link-to-image)
+
+
+
+---
+
+
+# Parâmetros Cruciais do Circuito
+
+## Frequência Natural e Coeficiente de Amortecimento
+Definição e cálculo da frequência natural não amortecida (\(\omega_0\)) e explicação do coeficiente de amortecimento (\(\alpha\)).
+
+![Gráfico de Diferentes Tipos de Amortecimento](link-to-image)
+
+
+
+---
+
+
+# Características da Resposta Criticamente Amortecida
+
+## Resposta Criticamente Amortecida
+Explicação sobre o significado e as condições para uma resposta criticamente amortecida.
+
+![Comportamento da Corrente e da Tensão](link-to-image)
+
+
+
+---
+
+
+# Visualizando a Resposta do Circuito
+
+## Gráficos e Análise
+Gráficos detalhados da corrente \(i_L(t)\) e da tensão ao longo do tempo com discussão dos resultados.
+
+![Resposta do Circuito ao Longo do Tempo](link-to-image)
+
+
+---
+
+
+# Síntese e Aplicações Práticas
+
+## Conclusão
+Recapitulação dos conceitos-chave, discussão sobre aplicações práticas.
+
+![Aplicações Práticas](link-to-image)
