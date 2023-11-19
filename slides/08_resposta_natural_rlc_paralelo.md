@@ -4,7 +4,7 @@
 
 <div class="grid-element">
 
-A equação \\(s^2 + \frac{s}{RC} + \frac{1}{LC} = 0\\) é chamada de **equação característica** da EDO de ordem 2 porquê suas raízes \\(s_{1}\\) e \\(s_{2}\\) determinam o caráter matemático de \\(v(t)\\).
+A equação \\(s^2 + \frac{s}{RC} + \frac{1}{LC} = 0\\) é chamada de **equação característica** da EDO de ordem 2 porque suas raízes \\(s_{1}\\) e \\(s_{2}\\) determinam o caráter matemático de \\(v(t)\\).
 
 Para encontrar suas raízes, apenas resolvemos esta equação de segundo grau pela fórmula de Bhaskara:
 
