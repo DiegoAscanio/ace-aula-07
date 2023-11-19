@@ -34,7 +34,7 @@ A tabela abaixo apresenta um resumo destes parâmetros para facilitar o entendim
 
 </div>
 
-Porque as unidades de todos os parâmetros estão em \\(\frac{rad}{s}\\)? Porque as raízes \\(s_{1}\\) e \\(s_{2}\\) (e por consequência, os parâmetros \\(\alpha \text{ e } \omega_{0}\\) que as determinam) são coeficientes do tempo \\(t\\) na exponencial \\(e^{st}\\). Como o expoente de \\(e\\) deve ser adimensional, logo, \\(s\\) deve ter a dimensão do recíproco (neste caso, inverso) do tempo — a frequência — para manter o expoente de \\(e^{st}\\) adimensional.
+Por que as unidades de todos os parâmetros estão em \\(\frac{rad}{s}\\)? Porque as raízes \\(s_{1}\\) e \\(s_{2}\\) (e por consequência, os parâmetros \\(\alpha \text{ e } \omega_{0}\\) que as determinam) são coeficientes do tempo \\(t\\) na exponencial \\(e^{st}\\). Como o expoente de \\(e\\) deve ser adimensional, logo, \\(s\\) deve ter a dimensão do recíproco (neste caso, inverso) do tempo — a frequência — para manter o expoente de \\(e^{st}\\) adimensional.
 
 </div>
 
