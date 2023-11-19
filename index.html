@@ -713,57 +713,49 @@ Referências Bibliográficas
 <h1 id="determinar-a-forma-da-resposta-subamortecida-a-um-degrau-no-circuito-rlc-paralelo">Determinar a Forma da Resposta Subamortecida a um Degrau no Circuito RLC Paralelo</h1>
 <div class="grid-element">
 <h2 id="introdu%C3%A7%C3%A3o-1">Introdução</h2>
-<p>A resposta subamortecida em um circuito RLC paralelo ocorre quando o sistema, após ser submetido a um degrau de tensão ou corrente, exibe oscilações que diminuem exponencialmente com o tempo. Esta resposta é crucial para entender o comportamento dinâmico de circuitos em engenharia elétrica e eletrônica.</p>
+<p>Determinar a resposta a um degrau Subamortecido de um circuito RLC em paralelo significa determinar a tensão nos ramos paralelos ou a corrente nos ramos individuais em que ambas as raízes sejam complexas.</p>
+<p>No nosso caso estudaremos quando ela se inicia em t = 0 e i = 0. Conforme t aumenta, nosso i também aumenta até se aproximar do i da fonte.</p>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" lang="en-US">
 <div class="grid-25 small">
 <div class="grid-element">
-<h1 id="equa%C3%A7%C3%B5es-da-resposta-subamortecida">Equações da Resposta Subamortecida</h1>
-<h2 id="corrente-no-circuito-it">Corrente no Circuito (i(t))</h2>
-<p>A corrente \( i(t) \) em um circuito RLC submetido a um degrau de tensão é dada por:<br />
-\[ i(t) = A e^{-\alpha t} \cos(\omega_d t + \phi) \]<br />
-onde \( A \) é a amplitude, \( \alpha \) é o coeficiente de amortecimento, \( \omega_d \) é a frequência de oscilação amortecida, e \( \phi \) é a fase inicial.</p>
-<h2 id="tens%C3%A3o-no-capacitor-vt">Tensão no Capacitor (V(t))</h2>
-<p>A tensão \( V(t) \) no capacitor do circuito RLC é proporcional à integral da corrente:<br />
-\[ V(t) = \frac{1}{C} \int i(t) , dt \]<br />
-onde \( C \) é a capacitância do capacitor.</p>
+<h1 id="resposta-ao-degrau-de-circuito-rlc">Resposta ao Degrau de Circuito RLC</h1>
+<p align="center">
+<img src="./img/grupo4/cc2.png" width="500" />
+</p>
+<p>\[ R = 625\Omega \]</p>
+<ol>
+<li>A frequência angular de amortecimento \( \omega_0 \) é dada por:</li>
+</ol>
+<p>\[ \omega_0^2 = \frac{1}{LC} = \frac{10^{12}}{25 \times 25} = 16 \times 10^8 \]</p>
+<ol start="2">
+<li>O coeficiente de amortecimento \( \alpha \) é dado por:</li>
+</ol>
+<p>\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \]</p>
+<p align="center">
+ou
+</p>
+<p>\[ \alpha^2 = 10.24 \times 10^8 \]</p>
+<ul>
+<li>Como \( \alpha^2 &lt; \omega_0^2 \), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.</li>
+</ul>
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" lang="en-US">
 <div class="grid-25 small">
 <div class="grid-element">
-<h1 id="resposta-ao-degrau-de-circuito-rlc">Resposta ao Degrau de Circuito RLC</h1>
-<ul>
-<li>
-<p>A frequência natural não amortecida \( \omega_0 \) é calculada como:</p>
-<p>\[ \omega_0^2 = 16 \times 10^8 \]</p>
-</li>
-<li>
-<p>O coeficiente de amortecimento \( \alpha \) é dado por:</p>
-<p>\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \]</p>
-<p>\[ \alpha^2 = 10.24 \times 10^8 \]</p>
-</li>
-<li>
-<p>Como \( \alpha^2 &lt; \omega_0^2 \), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.</p>
-</li>
-</ul>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" lang="en-US">
-<div class="grid-25 small">
-<div class="grid-element">
 <h1 id="resposta-ao-degrau-subamortecida">Resposta ao Degrau Subamortecida</h1>
-<ul>
-<li>
-<p>A frequência de oscilação amortecida \( \omega_d \) é calculada pela diferença entre a frequência natural não amortecida ao quadrado e o coeficiente de amortecimento ao quadrado:</p>
+<ol start="3">
+<li>A frequência de oscilação amortecida \( \omega_d \) é calculada pela diferença entre a frequência natural não amortecida ao quadrado e o coeficiente de amortecimento ao quadrado:</li>
+</ol>
 <p>\[ \omega_d = \sqrt{\omega_0^2 - \alpha^2} = \sqrt{16 \times 10^8 - 10,24 \times 10^8} = 24.000 \]</p>
-</li>
-<li>
-<p>As raízes da equação característica são:</p>
+<ol start="4">
+<li>As raízes da equação característica são:</li>
+</ol>
 <p>\[ s_1 = -\alpha + j\omega_d = -3,2 \times 10^4 + j2,4 \times 10^4 \text{ rad/s} \]<br />
 \[ s_2 = -\alpha - j\omega_d = -3,2 \times 10^4 - j2,4 \times 10^4 \text{ rad/s} \]</p>
-</li>
+<ul>
 <li>
 <p>A corrente no indutor \( i_L \) como resposta ao degrau é dada por:</p>
 <p>\[ i_L = I_f + e^{-\alpha t} \left[ B'_1 \cos(\omega_d t) + B'_2 \sin(\omega_d t) \right] \]</p>
@@ -771,7 +763,7 @@ onde \( C \) é a capacitância do capacitor.</p>
 </ul>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" lang="en-US">
 <div class="grid-25 small">
 <div class="grid-element">
 <h1 id="resposta-ao-degrau-subamortecida-1">Resposta ao Degrau Subamortecida</h1>
@@ -789,12 +781,12 @@ onde \( C \) é a capacitância do capacitor.</p>
 </li>
 <li>
 <p>A expressão para a corrente \( i_L(t) \) com as constantes substituídas é:</p>
-<p>\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sin(24.000t))e^{-32.000t} \text{ mA} \]</p>
+<p>\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sin(24.000t))e^{-32.000t} \text{ mA, t} \geq 0\]</p>
 </li>
 </ul>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" lang="en-US">
 <div class="grid-25 small">
 <div class="grid-element">
 <h1 id="resposta-ao-degrau-subamortecida-2">Resposta ao Degrau Subamortecida</h1>
@@ -812,73 +804,7 @@ onde \( C \) é a capacitância do capacitor.</p>
 </p>
 </div>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" lang="en-US">
-<div class="grid-25 small">
-<div class="grid-element">
-<h1 id="mudan%C3%A7a-no-valor-do-resistor-e-gr%C3%A1fico-da-corrente">Mudança no Valor do Resistor e Gráfico da Corrente</h1>
-<ul>
-<li>
-<p>Instrução: Mude o valor do resistor para \( R = 500 \Omega \). Determine \( i_L(t) \) para \( t \geq 0 \) e faça seu gráfico.</p>
-</li>
-<li>
-<p>Dados fornecidos:<br />
-\[ \omega_0^2 = 16 \times 10^8 \]<br />
-\[ \alpha = 4 \times 10^4 , \text{s}^{-1} \]</p>
-</li>
-<li>
-<p>A expressão para a corrente no indutor \( i_L \) é:<br />
-\[ i_L = I_f + e^{-\alpha t}(D'_1 t + D'_2) \]</p>
-</li>
-<li>
-<p>O próximo passo é calcular as constantes \( D'_1 \) e \( D'_2 \) com as novas condições do circuito e plotar o gráfico correspondente.</p>
-</li>
-</ul>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" lang="en-US">
-<div class="grid-25 small">
-<div class="grid-element">
-<h1 id="condi%C3%A7%C3%B5es-iniciais-e-express%C3%A3o-para-corrente-no-indutor">Condições Iniciais e Expressão para Corrente no Indutor</h1>
-<ul>
-<li>
-<p>As condições iniciais para a corrente no indutor são:</p>
-<p>\[ i_L(0) = I_f + D'_2 = 0 \]</p>
-<p>\[ \frac{d i_L}{d t}(0) = D'_1 - \alpha D'_2 = 0 \]</p>
-</li>
-<li>
-<p>Resolvendo para as constantes, encontramos:</p>
-<p>\[ D'_1 = -960.000 , \text{mA/s} \]</p>
-<p>\[ D'_2 = -24 , \text{mA} \]</p>
-</li>
-<li>
-<p>A expressão para a corrente \( i_L(t) \), considerando as condições iniciais, é:</p>
-<p>\[ i_L(t) = 24 + (-960.000t - 24)e^{-40.000t} , \text{mA}, , t \geq 0 \]</p>
-</li>
-</ul>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" lang="en-US">
-<div class="grid-25 small">
-<div class="grid-element">
-<h1 id="mudan%C3%A7a-no-valor-do-resistor-e-gr%C3%A1fico-da-corrente-1">Mudança no Valor do Resistor e Gráfico da Corrente</h1>
-<ul>
-<li>
-<p>Instrução: Mude o valor do resistor para \( R = 500 \Omega \). Determine \( i_L(t) \) para \( t \geq 0 \) e faça seu gráfico.</p>
-</li>
-<li>
-<p>A expressão para a corrente no indutor \( i_L(t) \) é:</p>
-<p>\[ i_L = 24 + (-960.000t - 24)e^{-40.000t} , \text{mA}, , t \geq 0 \]</p>
-</li>
-<li>
-<p>Abaixo está o gráfico da corrente \( i_L(t) \) em função do tempo após a mudança no valor do resistor.</p>
-</li>
-</ul>
-<p align="center">
-<img src="./img/grupo4/grupo4-img2.png" width="500" /> 
-</p>
-</div>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" lang="en-US">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" lang="en-US">
 <div class="grid-25-25 small">
 <div class="grid-element">
 <h1 id="gr%C3%A1fico-com-os-tr%C3%AAs-tipos-de-respostas-superamortecido-criticamente-amortecido-e-subamortecido">Gráfico com os Três Tipos de Respostas: Superamortecido, Criticamente Amortecido e Subamortecido</h1>

@@ -1150,30 +1150,9 @@ Referências Bibliográficas
 
 ## Introdução
 
-A resposta subamortecida em um circuito RLC paralelo ocorre quando o sistema, após ser submetido a um degrau de tensão ou corrente, exibe oscilações que diminuem exponencialmente com o tempo. Esta resposta é crucial para entender o comportamento dinâmico de circuitos em engenharia elétrica e eletrônica.
+Determinar a resposta a um degrau Subamortecido de um circuito RLC em paralelo significa determinar a tensão nos ramos paralelos ou a corrente nos ramos individuais em que ambas as raízes sejam complexas.
 
-</div>
-
-
----
-
-<div class="grid-25 small">
-
-<div class="grid-element">
-
-# Equações da Resposta Subamortecida
-
-## Corrente no Circuito (i(t))
-
-A corrente \\( i(t) \\) em um circuito RLC submetido a um degrau de tensão é dada por:
-\\[ i(t) = A e^{-\alpha t} \cos(\omega_d t + \phi) \\]
-onde \\( A \\) é a amplitude, \\( \alpha \\) é o coeficiente de amortecimento, \\( \omega_d \\) é a frequência de oscilação amortecida, e \\( \phi \\) é a fase inicial.
-
-## Tensão no Capacitor (V(t))
-
-A tensão \\( V(t) \\) no capacitor do circuito RLC é proporcional à integral da corrente:
-\\[ V(t) = \frac{1}{C} \int i(t) \, dt \\]
-onde \\( C \\) é a capacitância do capacitor.
+No nosso caso estudaremos quando ela se inicia em t = 0 e i = 0. Conforme t aumenta, nosso i também aumenta até se aproximar do i da fonte.
 
 </div>
 
@@ -1186,15 +1165,25 @@ onde \\( C \\) é a capacitância do capacitor.
 
 # Resposta ao Degrau de Circuito RLC
 
-- A frequência natural não amortecida \\( \omega_0 \\) é calculada como:
+<p align="center">
+<img src="./img/grupo4/cc2.png" width="500"/>
+</p>
 
-  \\[ \omega_0^2 = 16 \times 10^8 \\]
+\\[ R = 625\Omega \\]
 
-- O coeficiente de amortecimento \\( \alpha \\) é dado por:
+1. A frequência angular de amortecimento \\( \omega_0 \\) é dada por:
 
-  \\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \\]
+\\[ \omega_0^2 = \frac{1}{LC} = \frac{10^{12}}{25 \times 25} = 16 \times 10^8 \\]
 
-  \\[ \alpha^2 = 10.24 \times 10^8 \\]
+2. O coeficiente de amortecimento \\( \alpha \\) é dado por:
+
+\\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \\]
+
+<p align="center">
+ou
+</p>
+
+\\[ \alpha^2 = 10.24 \times 10^8 \\]
 
 - Como \\( \alpha^2 < \omega_0^2 \\), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.
 
@@ -1209,14 +1198,14 @@ onde \\( C \\) é a capacitância do capacitor.
 
 # Resposta ao Degrau Subamortecida
 
-- A frequência de oscilação amortecida \\( \omega_d \\) é calculada pela diferença entre a frequência natural não amortecida ao quadrado e o coeficiente de amortecimento ao quadrado:
+3. A frequência de oscilação amortecida \\( \omega_d \\) é calculada pela diferença entre a frequência natural não amortecida ao quadrado e o coeficiente de amortecimento ao quadrado:
 
-  \\[ \omega_d = \sqrt{\omega_0^2 - \alpha^2} = \sqrt{16 \times 10^8 - 10,24 \times 10^8} = 24.000 \\]
+\\[ \omega_d = \sqrt{\omega_0^2 - \alpha^2} = \sqrt{16 \times 10^8 - 10,24 \times 10^8} = 24.000 \\]
 
-- As raízes da equação característica são:
+4. As raízes da equação característica são:
 
-  \\[ s_1 = -\alpha + j\omega_d = -3,2 \times 10^4 + j2,4 \times 10^4 \text{ rad/s} \\]
-  \\[ s_2 = -\alpha - j\omega_d = -3,2 \times 10^4 - j2,4 \times 10^4 \text{ rad/s} \\]
+\\[ s_1 = -\alpha + j\omega_d = -3,2 \times 10^4 + j2,4 \times 10^4 \text{ rad/s} \\]
+\\[ s_2 = -\alpha - j\omega_d = -3,2 \times 10^4 - j2,4 \times 10^4 \text{ rad/s} \\]
 
 - A corrente no indutor \\( i_L \\) como resposta ao degrau é dada por:
 
@@ -1249,7 +1238,7 @@ onde \\( C \\) é a capacitância do capacitor.
 
 - A expressão para a corrente \\( i_L(t) \\) com as constantes substituídas é:
 
-  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sin(24.000t))e^{-32.000t} \text{ mA} \\]
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sin(24.000t))e^{-32.000t} \text{ mA, t} \geq 0\\]
 
 </div>
 
@@ -1270,78 +1259,6 @@ onde \\( C \\) é a capacitância do capacitor.
 
 <p align="center">
 <img src="./img/grupo4/grupo4-img1.png" width="500"/> 
-</p>
-
-</div>
-
-
----
-
-<div class="grid-25 small">
-
-<div class="grid-element">
-
-# Mudança no Valor do Resistor e Gráfico da Corrente
-
-- Instrução: Mude o valor do resistor para \\( R = 500 \Omega \\). Determine \\( i_L(t) \\) para \\( t \geq 0 \\) e faça seu gráfico.
-
-- Dados fornecidos:
-  \\[ \omega_0^2 = 16 \times 10^8 \\]
-  \\[ \alpha = 4 \times 10^4 \, \text{s}^{-1} \\]
-
-- A expressão para a corrente no indutor \\( i_L \\) é:
-  \\[ i_L = I_f + e^{-\alpha t}(D'_1 t + D'_2) \\]
-
-- O próximo passo é calcular as constantes \\( D'\_1 \\) e \\( D'\_2 \\) com as novas condições do circuito e plotar o gráfico correspondente.
-
-</div>
-
-
----
-
-<div class="grid-25 small">
-
-<div class="grid-element">
-
-# Condições Iniciais e Expressão para Corrente no Indutor
-
-- As condições iniciais para a corrente no indutor são:
-
-  \\[ i_L(0) = I_f + D'_2 = 0 \\]
-
-  \\[ \frac{d i_L}{d t}(0) = D'_1 - \alpha D'_2 = 0 \\]
-
-- Resolvendo para as constantes, encontramos:
-
-  \\[ D'_1 = -960.000 \, \text{mA/s} \\]
-
-  \\[ D'_2 = -24 \, \text{mA} \\]
-
-- A expressão para a corrente \\( i_L(t) \\), considerando as condições iniciais, é:
-
-  \\[ i_L(t) = 24 + (-960.000t - 24)e^{-40.000t} \, \text{mA}, \, t \geq 0 \\]
-
-</div>
-
-
----
-
-<div class="grid-25 small">
-
-<div class="grid-element">
-
-# Mudança no Valor do Resistor e Gráfico da Corrente
-
-- Instrução: Mude o valor do resistor para \\( R = 500 \Omega \\). Determine \\( i_L(t) \\) para \\( t \geq 0 \\) e faça seu gráfico.
-
-- A expressão para a corrente no indutor \\( i_L(t) \\) é:
-
-  \\[ i_L = 24 + (-960.000t - 24)e^{-40.000t} \, \text{mA}, \, t \geq 0 \\]
-
-- Abaixo está o gráfico da corrente \\( i_L(t) \\) em função do tempo após a mudança no valor do resistor.
-
-<p align="center">
-<img src="./img/grupo4/grupo4-img2.png" width="500"/> 
 </p>
 
 </div>
