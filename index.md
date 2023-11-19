@@ -1300,21 +1300,23 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 ---
 
-# Mudança no Valor do Resistor e Gráfico da Corrente
+# Condições Iniciais e Expressão para Corrente no Indutor
 
-- Instrução: Mude o valor do resistor para \\( R = 500 \Omega \\). Determine \\( i_L(t) \\) para \\( t \geq 0 \\) e faça seu gráfico.
+- As condições iniciais para a corrente no indutor são:
+  
+  \\[ i_L(0) = I_f + D'_2 = 0 \\]
 
-- Dados fornecidos:
-  \\[ \omega_0^2 = 16 \times 10^8 \\]
-  \\[ \alpha = 4 \times 10^4 \, \text{s}^{-1} \\]
+  \\[ \frac{d i_L}{d t}(0) = D'_1 - \alpha D'_2 = 0 \\]
 
-- A expressão para a corrente no indutor \\( i_L \\) é:
-  \\[ i_L = I_f + e^{-\alpha t}(D'_1 t + D'_2) \\]
+- Resolvendo para as constantes, encontramos:
 
-- O próximo passo é calcular as constantes \\( D'_1 \\) e \\( D'_2 \\) com as novas condições do circuito e plotar o gráfico correspondente.
+  \\[ D'_1 = -960.000 \, \text{mA/s} \\]
 
-![Insira o gráfico da corrente \\( i_L(t) \\) aqui](link-para-o-grafico)
+  \\[ D'_2 = -24 \, \text{mA} \\]
 
+- A expressão para a corrente \\( i_L(t) \\), considerando as condições iniciais, é:
+
+  \\[ i_L(t) = 24 + (-960.000t - 24)e^{-40.000t} \, \text{mA}, \, t \geq 0 \\]
 
 ---
 
@@ -1342,4 +1344,4 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 - Cada curva mostra como a corrente no indutor \\( i_L \\) se comporta com o tempo após a aplicação de um degrau de tensão.
 
-![Gráfico das Respostas do Circuito RLC](link-para-o-grafico)
+![Gráfico das Respostas do Circuito RLC](./img/grupo4/grupo4-img3.png)
