@@ -1146,91 +1146,141 @@ Referências Bibliográficas
 
 # Determinar a Forma da Resposta Subamortecida a um Degrau no Circuito RLC Paralelo
 
+<div class="grid-element">
+
 ## Introdução
+
 A resposta subamortecida em um circuito RLC paralelo ocorre quando o sistema, após ser submetido a um degrau de tensão ou corrente, exibe oscilações que diminuem exponencialmente com o tempo. Esta resposta é crucial para entender o comportamento dinâmico de circuitos em engenharia elétrica e eletrônica.
+
+</div>
 
 
 ---
 
+<div class="grid-25 small">
+
+<div class="grid-element">
+
 # Equações da Resposta Subamortecida
 
 ## Corrente no Circuito (i(t))
+
 A corrente \\( i(t) \\) em um circuito RLC submetido a um degrau de tensão é dada por:
 \\[ i(t) = A e^{-\alpha t} \cos(\omega_d t + \phi) \\]
 onde \\( A \\) é a amplitude, \\( \alpha \\) é o coeficiente de amortecimento, \\( \omega_d \\) é a frequência de oscilação amortecida, e \\( \phi \\) é a fase inicial.
 
 ## Tensão no Capacitor (V(t))
+
 A tensão \\( V(t) \\) no capacitor do circuito RLC é proporcional à integral da corrente:
 \\[ V(t) = \frac{1}{C} \int i(t) \, dt \\]
 onde \\( C \\) é a capacitância do capacitor.
 
+</div>
+
 
 ---
+
+<div class="grid-50 small">
+
+<div class="grid-element">
 
 # Exemplo com Corrente (i(t))
 
 ## Exemplo Prático de i(t)
+
 Consideremos um circuito RLC paralelo com R = 100 Ω, L = 0.5 H, e C = 0.01 F. Calculamos a corrente \\( i(t) \\) usando a equação fornecida e analisamos seu comportamento ao longo do tempo.
 
 ### Cálculos:
+
 - Frequência natural não amortecida: \\( \omega_0 = 1 / \sqrt{LC} \\)
 - Coeficiente de amortecimento: \\( \alpha = R / (2L) \\)
 - Frequência de oscilação amortecida: \\( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \\)
 
 ### Observação:
+
 - A corrente exibe oscilações decrescentes, característica de uma resposta subamortecida.
 
 ![Gráfico de i(t) no Circuito RLC](link-to-graph)
 
+</div>
+
 
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Exemplo com Tensão (V(t))
 
 ## Exemplo Prático de V(t)
+
 Utilizando o mesmo circuito RLC do exemplo anterior, determinamos a tensão \\( V(t) \\) no capacitor. A tensão é calculada integrando a corrente \\( i(t) \\) ao longo do tempo.
 
 ### Cálculos:
+
 - A tensão \\( V(t) \\) é obtida integrando a corrente \\( i(t) \\) com os parâmetros do circuito.
 
 ### Observação:
+
 - A tensão no capacitor também exibe um padrão de oscilações decrescentes.
 
 ![Gráfico de V(t) no Circuito RLC](link-to-voltage-graph)
 
+</div>
+
 
 ---
 
+<div class="grid-25 small">
+
+<div class="grid-element">
+
 ## Resumo
+
 A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica importante que demonstra como os circuitos reagem a mudanças súbitas. O entendimento desta resposta é fundamental para o design e análise de circuitos em muitas aplicações de engenharia.
 
 ## Aplicações Práticas
+
 - Sistemas de controle
 - Filtros em eletrônica
 - Sistemas de comunicação
 
 ### Observação Final:
+
 - A capacidade de prever e controlar a resposta subamortecida é essencial para engenheiros e projetistas de circuitos.
+
+</div>
 
 
 ---
 
+<div class="grid-25 small">
+
+<div class="grid-element">
+
 # Resposta ao Degrau de Circuito RLC
 
 - A frequência natural não amortecida \\( \omega_0 \\) é calculada como:
-  
+
   \\[ \omega_0^2 = 16 \times 10^8 \\]
 
 - O coeficiente de amortecimento \\( \alpha \\) é dado por:
 
   \\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \\]
-  
+
   \\[ \alpha^2 = 10.24 \times 10^8 \\]
 
 - Como \\( \alpha^2 < \omega_0^2 \\), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.
 
+</div>
+
 
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Resposta ao Degrau Subamortecida
 
@@ -1245,9 +1295,16 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 - A corrente no indutor \\( i_L \\) como resposta ao degrau é dada por:
 
-  \\[ i_L = I_f + e^{-\alpha t} \left[ B'_1 \cos(\omega_d t) + B'_2 \sen(\omega_d t) \right] \\]
+  \\[ i_L = I_f + e^{-\alpha t} \left[ B'_1 \cos(\omega_d t) + B'_2 \sin(\omega_d t) \right] \\]
+
+</div>
+
 
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Resposta ao Degrau Subamortecida
 
@@ -1257,9 +1314,9 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
   \\[ \frac{d i_L}{d t}(0) = \omega_d B'_2 -\alpha B'_1 = 0 \\]
 
-  Onde \\( B'_1 \\) e \\( B'_2 \\) são constantes a serem determinadas.
+  Onde \\( B'\_1 \\) e \\( B'\_2 \\) são constantes a serem determinadas.
 
-- Resolvendo as condições iniciais, encontramos os valores de \\( B'_1 \\) e \\( B'_2 \\):
+- Resolvendo as condições iniciais, encontramos os valores de \\( B'\_1 \\) e \\( B'\_2 \\):
 
   \\[ B'_1 = -24 \text{ mA} \\]
 
@@ -1267,21 +1324,35 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 - A expressão para a corrente \\( i_L(t) \\) com as constantes substituídas é:
 
-  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sen(24.000t))e^{-32.000t} \text{ mA} \\]
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sin(24.000t))e^{-32.000t} \text{ mA} \\]
+
+</div>
+
 
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Resposta ao Degrau Subamortecida
 
 - A corrente no indutor \\( i_L(t) \\) como resposta ao degrau é dada pela expressão:
 
-  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32\sen(24.000t))e^{-32.000t} \text{ mA} \\]
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32\sin(24.000t))e^{-32.000t} \text{ mA} \\]
 
 - A seguir, um gráfico da corrente \\( i_L(t) \\) em função do tempo ilustrando a resposta ao degrau subamortecida.
 
 ![Gráfico da Corrente no Indutor](./img/grupo4/grupo4-img1.png)
 
+</div>
+
+
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Mudança no Valor do Resistor e Gráfico da Corrente
 
@@ -1294,16 +1365,23 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 - A expressão para a corrente no indutor \\( i_L \\) é:
   \\[ i_L = I_f + e^{-\alpha t}(D'_1 t + D'_2) \\]
 
-- O próximo passo é calcular as constantes \\( D'_1 \\) e \\( D'_2 \\) com as novas condições do circuito e plotar o gráfico correspondente.
+- O próximo passo é calcular as constantes \\( D'\_1 \\) e \\( D'\_2 \\) com as novas condições do circuito e plotar o gráfico correspondente.
 
-![Insira o gráfico da corrente \\( i_L(t) \\) aqui](link-para-o-grafico)
+![Insira o gráfico da corrente ( i_L(t) ) aqui](link-para-o-grafico)
+
+</div>
+
 
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Condições Iniciais e Expressão para Corrente no Indutor
 
 - As condições iniciais para a corrente no indutor são:
-  
+
   \\[ i_L(0) = I_f + D'_2 = 0 \\]
 
   \\[ \frac{d i_L}{d t}(0) = D'_1 - \alpha D'_2 = 0 \\]
@@ -1318,7 +1396,14 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
   \\[ i_L(t) = 24 + (-960.000t - 24)e^{-40.000t} \, \text{mA}, \, t \geq 0 \\]
 
+</div>
+
+
 ---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
 
 # Mudança no Valor do Resistor e Gráfico da Corrente
 
@@ -1332,16 +1417,23 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 ![Gráfico da Corrente no Indutor](./img/grupo4/grupo4-img2.png)
 
+</div>
+
+
 ---
+
+<div class="grid-25-25 small">
+
+<div class="grid-element">
 
 # Gráfico com os Três Tipos de Respostas: Superamortecido, Criticamente Amortecido e Subamortecido
 
 - O gráfico a seguir ilustra as diferentes respostas de um circuito RLC para diferentes valores de resistência \\( R \\):
 
-  - Superamortecido (\\( R = 400 \Omega \\))
-  - Criticamente amortecido (\\( R = 500 \Omega \\))
-  - Subamortecido (\\( R = 625 \Omega \\))
+  - Superamortecido (\\( R = 400 \Omega \\)); Criticamente amortecido (\\( R = 500 \Omega \\)); Subamortecido (\\( R = 625 \Omega \\))
 
 - Cada curva mostra como a corrente no indutor \\( i_L \\) se comporta com o tempo após a aplicação de um degrau de tensão.
 
 ![Gráfico das Respostas do Circuito RLC](./img/grupo4/grupo4-img3.png)
+
+</div>
