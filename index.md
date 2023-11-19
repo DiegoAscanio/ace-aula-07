@@ -1280,3 +1280,66 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 - A seguir, um gráfico da corrente \\( i_L(t) \\) em função do tempo ilustrando a resposta ao degrau subamortecida.
 
 ![Gráfico da Corrente no Indutor](![Alt text](image.png))
+
+---
+
+# Mudança no Valor do Resistor e Gráfico da Corrente
+
+- Instrução: Mude o valor do resistor para \( R = 500 \Omega \). Determine \( i_L(t) \) para \( t \geq 0 \) e faça seu gráfico.
+
+- Dados fornecidos:
+  \[ \omega_0^2 = 16 \times 10^8 \]
+  \[ \alpha = 4 \times 10^4 \, \text{s}^{-1} \]
+
+- A expressão para a corrente no indutor \( i_L \) é:
+  \[ i_L = I_f + e^{-\alpha t}(D'_1 t + D'_2) \]
+
+- O próximo passo é calcular as constantes \( D'_1 \) e \( D'_2 \) com as novas condições do circuito e plotar o gráfico correspondente.
+
+![Insira o gráfico da corrente \( i_L(t) \) aqui](link-para-o-grafico)
+
+---
+
+# Mudança no Valor do Resistor e Gráfico da Corrente
+
+- Instrução: Mude o valor do resistor para \( R = 500 \Omega \). Determine \( i_L(t) \) para \( t \geq 0 \) e faça seu gráfico.
+
+- Dados fornecidos:
+  \[ \omega_0^2 = 16 \times 10^8 \]
+  \[ \alpha = 4 \times 10^4 \, \text{s}^{-1} \]
+
+- A expressão para a corrente no indutor \( i_L \) é:
+  \[ i_L = I_f + e^{-\alpha t}(D'_1 t + D'_2) \]
+
+- O próximo passo é calcular as constantes \( D'_1 \) e \( D'_2 \) com as novas condições do circuito e plotar o gráfico correspondente.
+
+![Insira o gráfico da corrente \( i_L(t) \) aqui](link-para-o-grafico)
+
+
+---
+
+# Mudança no Valor do Resistor e Gráfico da Corrente
+
+- Instrução: Mude o valor do resistor para \( R = 500 \Omega \). Determine \( i_L(t) \) para \( t \geq 0 \) e faça seu gráfico.
+
+- A expressão para a corrente no indutor \( i_L(t) \) é:
+
+  \[ i_L = 24 + (-960.000t - 24)e^{-40.000t} \, \text{mA}, \, t \geq 0 \]
+
+- Abaixo está o gráfico da corrente \( i_L(t) \) em função do tempo após a mudança no valor do resistor.
+
+![Gráfico da Corrente no Indutor](link-para-o-grafico)
+
+---
+
+# Gráfico com os Três Tipos de Respostas: Superamortecido, Criticamente Amortecido e Subamortecido
+
+- O gráfico a seguir ilustra as diferentes respostas de um circuito RLC para diferentes valores de resistência \( R \):
+
+  - Superamortecido (\( R = 400 \Omega \))
+  - Criticamente amortecido (\( R = 500 \Omega \))
+  - Subamortecido (\( R = 625 \Omega \))
+
+- Cada curva mostra como a corrente no indutor \( i_L \) se comporta com o tempo após a aplicação de um degrau de tensão.
+
+![Gráfico das Respostas do Circuito RLC](link-para-o-grafico)
