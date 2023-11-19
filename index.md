@@ -1279,7 +1279,7 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 - A seguir, um gráfico da corrente \\( i_L(t) \\) em função do tempo ilustrando a resposta ao degrau subamortecida.
 
-![Gráfico da Corrente no Indutor](![Alt text](image.png))
+![Gráfico da Corrente no Indutor](./img/grupo4/grupo4-img1.png)
 
 ---
 
@@ -1330,7 +1330,7 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 - Abaixo está o gráfico da corrente \\( i_L(t) \\) em função do tempo após a mudança no valor do resistor.
 
-![Gráfico da Corrente no Indutor](link-para-o-grafico)
+![Gráfico da Corrente no Indutor](./img/grupo4/grupo4-img2.png)
 
 ---
 
