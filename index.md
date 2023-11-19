@@ -1155,14 +1155,14 @@ A resposta subamortecida em um circuito RLC paralelo ocorre quando o sistema, ap
 # Equações da Resposta Subamortecida
 
 ## Corrente no Circuito (i(t))
-A corrente \( i(t) \) em um circuito RLC submetido a um degrau de tensão é dada por:
-\[ i(t) = A e^{-\alpha t} \cos(\omega_d t + \phi) \]
-onde \( A \) é a amplitude, \( \alpha \) é o coeficiente de amortecimento, \( \omega_d \) é a frequência de oscilação amortecida, e \( \phi \) é a fase inicial.
+A corrente \\( i(t) \\) em um circuito RLC submetido a um degrau de tensão é dada por:
+\\[ i(t) = A e^{-\alpha t} \cos(\omega_d t + \phi) \\]
+onde \\( A \\) é a amplitude, \\( \alpha \\) é o coeficiente de amortecimento, \\( \omega_d \\) é a frequência de oscilação amortecida, e \\( \phi \\) é a fase inicial.
 
 ## Tensão no Capacitor (V(t))
-A tensão \( V(t) \) no capacitor do circuito RLC é proporcional à integral da corrente:
-\[ V(t) = \frac{1}{C} \int i(t) \, dt \]
-onde \( C \) é a capacitância do capacitor.
+A tensão \\( V(t) \\) no capacitor do circuito RLC é proporcional à integral da corrente:
+\\[ V(t) = \frac{1}{C} \int i(t) \, dt \\]
+onde \\( C \\) é a capacitância do capacitor.
 
 
 ---
@@ -1170,12 +1170,12 @@ onde \( C \) é a capacitância do capacitor.
 # Exemplo com Corrente (i(t))
 
 ## Exemplo Prático de i(t)
-Consideremos um circuito RLC paralelo com R = 100 Ω, L = 0.5 H, e C = 0.01 F. Calculamos a corrente \( i(t) \) usando a equação fornecida e analisamos seu comportamento ao longo do tempo.
+Consideremos um circuito RLC paralelo com R = 100 Ω, L = 0.5 H, e C = 0.01 F. Calculamos a corrente \\( i(t) \\) usando a equação fornecida e analisamos seu comportamento ao longo do tempo.
 
 ### Cálculos:
-- Frequência natural não amortecida: \( \omega_0 = 1 / \sqrt{LC} \)
-- Coeficiente de amortecimento: \( \alpha = R / (2L) \)
-- Frequência de oscilação amortecida: \( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \)
+- Frequência natural não amortecida: \\( \omega_0 = 1 / \sqrt{LC} \\)
+- Coeficiente de amortecimento: \\( \alpha = R / (2L) \\)
+- Frequência de oscilação amortecida: \\( \omega_d = \sqrt{\omega_0^2 - \alpha^2} \\)
 
 ### Observação:
 - A corrente exibe oscilações decrescentes, característica de uma resposta subamortecida.
@@ -1188,10 +1188,10 @@ Consideremos um circuito RLC paralelo com R = 100 Ω, L = 0.5 H, e C = 0.01 F. 
 # Exemplo com Tensão (V(t))
 
 ## Exemplo Prático de V(t)
-Utilizando o mesmo circuito RLC do exemplo anterior, determinamos a tensão \( V(t) \) no capacitor. A tensão é calculada integrando a corrente \( i(t) \) ao longo do tempo.
+Utilizando o mesmo circuito RLC do exemplo anterior, determinamos a tensão \\( V(t) \\) no capacitor. A tensão é calculada integrando a corrente \\( i(t) \\) ao longo do tempo.
 
 ### Cálculos:
-- A tensão \( V(t) \) é obtida integrando a corrente \( i(t) \) com os parâmetros do circuito.
+- A tensão \\( V(t) \\) é obtida integrando a corrente \\( i(t) \\) com os parâmetros do circuito.
 
 ### Observação:
 - A tensão no capacitor também exibe um padrão de oscilações decrescentes.
@@ -1229,25 +1229,54 @@ A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica i
 
 - Como \\( \alpha^2 < \omega_0^2 \\), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.
 
-![As raízes são complexas, resposta será subamortecida](link-to-your-image)
 
 ---
 
+# Resposta ao Degrau Subamortecida
 
-# Visualizando a Resposta do Circuito
+- A frequência de oscilação amortecida \\( \omega_d \\) é calculada pela diferença entre a frequência natural não amortecida ao quadrado e o coeficiente de amortecimento ao quadrado:
 
-## Gráficos e Análise
-Gráficos detalhados da corrente \(i_L(t)\) e da tensão ao longo do tempo com discussão dos resultados.
+  \\[ \omega_d = \sqrt{\omega_0^2 - \alpha^2} = \sqrt{16 \times 10^8 - 10,24 \times 10^8} = 24.000 \\]
 
-![Resposta do Circuito ao Longo do Tempo](link-to-image)
+- As raízes da equação característica são:
 
+  \\[ s_1 = -\alpha + j\omega_d = -3,2 \times 10^4 + j2,4 \times 10^4 \text{ rad/s} \\]
+  \\[ s_2 = -\alpha - j\omega_d = -3,2 \times 10^4 - j2,4 \times 10^4 \text{ rad/s} \\]
+
+- A corrente no indutor \\( i_L \\) como resposta ao degrau é dada por:
+
+  \\[ i_L = I_f + e^{-\alpha t} \left[ B'_1 \cos(\omega_d t) + B'_2 \sen(\omega_d t) \right] \\]
 
 ---
 
+# Resposta ao Degrau Subamortecida
 
-# Síntese e Aplicações Práticas
+- As condições iniciais para a corrente \\( i_L \\) no indutor são dadas por:
 
-## Conclusão
-Recapitulação dos conceitos-chave, discussão sobre aplicações práticas.
+  \\[ i_L(0) = I_f + B'_1 = 0 \\]
 
-![Aplicações Práticas](link-to-image)
+  \\[ \frac{d i_L}{d t}(0) = \omega_d B'_2 -\alpha B'_1 = 0 \\]
+
+  Onde \\( B'_1 \\) e \\( B'_2 \\) são constantes a serem determinadas.
+
+- Resolvendo as condições iniciais, encontramos os valores de \\( B'_1 \\) e \\( B'_2 \\):
+
+  \\[ B'_1 = -24 \text{ mA} \\]
+
+  \\[ B'_2 = -32 \text{ mA} \\]
+
+- A expressão para a corrente \\( i_L(t) \\) com as constantes substituídas é:
+
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sen(24.000t))e^{-32.000t} \text{ mA} \\]
+
+---
+
+# Resposta ao Degrau Subamortecida
+
+- A corrente no indutor \\( i_L(t) \\) como resposta ao degrau é dada pela expressão:
+
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32\sen(24.000t))e^{-32.000t} \text{ mA} \\]
+
+- A seguir, um gráfico da corrente \\( i_L(t) \\) em função do tempo ilustrando a resposta ao degrau subamortecida.
+
+![Gráfico da Corrente no Indutor](![Alt text](image.png))
