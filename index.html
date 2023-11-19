@@ -710,44 +710,82 @@ Referências Bibliográficas
 </div>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32">
-<h1 id="resposta-criticamente-amortecida-a-um-degrau-no-circuito-rlc-paralelo">Resposta Criticamente Amortecida a um Degrau no Circuito RLC Paralelo</h1>
+<h1 id="determinar-a-forma-da-resposta-subamortecida-a-um-degrau-no-circuito-rlc-paralelo">Determinar a Forma da Resposta Subamortecida a um Degrau no Circuito RLC Paralelo</h1>
 <h2 id="introdu%C3%A7%C3%A3o-1">Introdução</h2>
-<p>Definição de circuito RLC paralelo, introdução ao conceito de resposta a um degrau de tensão e sua importância em aplicações práticas.</p>
-<p><img src="link-to-image" alt="Diagrama de um Circuito RLC Paralelo" /></p>
+<p>A resposta subamortecida em um circuito RLC paralelo ocorre quando o sistema, após ser submetido a um degrau de tensão ou corrente, exibe oscilações que diminuem exponencialmente com o tempo. Esta resposta é crucial para entender o comportamento dinâmico de circuitos em engenharia elétrica e eletrônica.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33">
-<h1 id="fundamentos-do-circuito-rlc">Fundamentos do Circuito RLC</h1>
-<h2 id="conceitos-b%C3%A1sicos">Conceitos Básicos</h2>
-<ul>
-<li><strong>Resistor (R):</strong> Dissipa energia em forma de calor.</li>
-<li><strong>Indutor (L):</strong> Armazena energia no campo magnético.</li>
-<li><strong>Capacitor (C):</strong> Armazena energia no campo elétrico.</li>
-</ul>
-<p><img src="link-to-image" alt="Representações Simbólicas de Componentes Elétricos" /></p>
+<h1 id="equa%C3%A7%C3%B5es-da-resposta-subamortecida">Equações da Resposta Subamortecida</h1>
+<h2 id="corrente-no-circuito-it">Corrente no Circuito (i(t))</h2>
+<p>A corrente ( i(t) ) em um circuito RLC submetido a um degrau de tensão é dada por:<br />
+[ i(t) = A e^{-\alpha t} \cos(\omega_d t + \phi) ]<br />
+onde ( A ) é a amplitude, ( \alpha ) é o coeficiente de amortecimento, ( \omega_d ) é a frequência de oscilação amortecida, e ( \phi ) é a fase inicial.</p>
+<h2 id="tens%C3%A3o-no-capacitor-vt">Tensão no Capacitor (V(t))</h2>
+<p>A tensão ( V(t) ) no capacitor do circuito RLC é proporcional à integral da corrente:<br />
+[ V(t) = \frac{1}{C} \int i(t) , dt ]<br />
+onde ( C ) é a capacitância do capacitor.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34">
-<h1 id="aplica%C3%A7%C3%A3o-em-um-circuito-espec%C3%ADfico">Aplicação em um Circuito Específico</h1>
-<h2 id="exemplo-pr%C3%A1tico">Exemplo Prático</h2>
-<p>Descrição de um exemplo prático com valores específicos para R, L e C e a formulação da equação diferencial que modela o circuito.</p>
-<p><img src="link-to-image" alt="Esquemático do Circuito" /></p>
+<h1 id="exemplo-com-corrente-it">Exemplo com Corrente (i(t))</h1>
+<h2 id="exemplo-pr%C3%A1tico-de-it">Exemplo Prático de i(t)</h2>
+<p>Consideremos um circuito RLC paralelo com R = 100 Ω, L = 0.5 H, e C = 0.01 F. Calculamos a corrente ( i(t) ) usando a equação fornecida e analisamos seu comportamento ao longo do tempo.</p>
+<h3 id="c%C3%A1lculos">Cálculos:</h3>
+<ul>
+<li>Frequência natural não amortecida: ( \omega_0 = 1 / \sqrt{LC} )</li>
+<li>Coeficiente de amortecimento: ( \alpha = R / (2L) )</li>
+<li>Frequência de oscilação amortecida: ( \omega_d = \sqrt{\omega_0^2 - \alpha^2} )</li>
+</ul>
+<h3 id="observa%C3%A7%C3%A3o">Observação:</h3>
+<ul>
+<li>A corrente exibe oscilações decrescentes, característica de uma resposta subamortecida.</li>
+</ul>
+<p><img src="link-to-graph" alt="Gráfico de i(t) no Circuito RLC" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35">
-<h1 id="compreendendo-as-condi%C3%A7%C3%B5es-iniciais">Compreendendo as Condições Iniciais</h1>
-<h2 id="an%C3%A1lise-inicial">Análise Inicial</h2>
-<p>Discussão sobre as condições iniciais do circuito em t=0 e o comportamento imediato da corrente e da tensão.</p>
-<p><img src="link-to-image" alt="Resposta Inicial do Circuito" /></p>
+<h1 id="exemplo-com-tens%C3%A3o-vt">Exemplo com Tensão (V(t))</h1>
+<h2 id="exemplo-pr%C3%A1tico-de-vt">Exemplo Prático de V(t)</h2>
+<p>Utilizando o mesmo circuito RLC do exemplo anterior, determinamos a tensão ( V(t) ) no capacitor. A tensão é calculada integrando a corrente ( i(t) ) ao longo do tempo.</p>
+<h3 id="c%C3%A1lculos-1">Cálculos:</h3>
+<ul>
+<li>A tensão ( V(t) ) é obtida integrando a corrente ( i(t) ) com os parâmetros do circuito.</li>
+</ul>
+<h3 id="observa%C3%A7%C3%A3o-1">Observação:</h3>
+<ul>
+<li>A tensão no capacitor também exibe um padrão de oscilações decrescentes.</li>
+</ul>
+<p><img src="link-to-voltage-graph" alt="Gráfico de V(t) no Circuito RLC" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36">
-<h1 id="par%C3%A2metros-cruciais-do-circuito">Parâmetros Cruciais do Circuito</h1>
-<h2 id="frequ%C3%AAncia-natural-e-coeficiente-de-amortecimento">Frequência Natural e Coeficiente de Amortecimento</h2>
-<p>Definição e cálculo da frequência natural não amortecida ((\omega_0)) e explicação do coeficiente de amortecimento ((\alpha)).</p>
-<p><img src="link-to-image" alt="Gráfico de Diferentes Tipos de Amortecimento" /></p>
+<h2 id="resumo">Resumo</h2>
+<p>A resposta subamortecida a um degrau no circuito RLC paralelo é uma dinâmica importante que demonstra como os circuitos reagem a mudanças súbitas. O entendimento desta resposta é fundamental para o design e análise de circuitos em muitas aplicações de engenharia.</p>
+<h2 id="aplica%C3%A7%C3%B5es-pr%C3%A1ticas">Aplicações Práticas</h2>
+<ul>
+<li>Sistemas de controle</li>
+<li>Filtros em eletrônica</li>
+<li>Sistemas de comunicação</li>
+</ul>
+<h3 id="observa%C3%A7%C3%A3o-final">Observação Final:</h3>
+<ul>
+<li>A capacidade de prever e controlar a resposta subamortecida é essencial para engenheiros e projetistas de circuitos.</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37">
-<h1 id="caracter%C3%ADsticas-da-resposta-criticamente-amortecida">Características da Resposta Criticamente Amortecida</h1>
-<h2 id="resposta-criticamente-amortecida">Resposta Criticamente Amortecida</h2>
-<p>Explicação sobre o significado e as condições para uma resposta criticamente amortecida.</p>
-<p><img src="link-to-image" alt="Comportamento da Corrente e da Tensão" /></p>
+<h1 id="resposta-ao-degrau-de-circuito-rlc">Resposta ao Degrau de Circuito RLC</h1>
+<ul>
+<li>
+<p>A frequência natural não amortecida \( \omega_0 \) é calculada como:</p>
+<p>\[ \omega_0^2 = 16 \times 10^8 \]</p>
+</li>
+<li>
+<p>O coeficiente de amortecimento \( \alpha \) é dado por:</p>
+<p>\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \]</p>
+<p>\[ \alpha^2 = 10.24 \times 10^8 \]</p>
+</li>
+<li>
+<p>Como \( \alpha^2 &lt; \omega_0^2 \), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.</p>
+</li>
+</ul>
+<p><img src="link-to-your-image" alt="As raízes são complexas, resposta será subamortecida" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38">
 <h1 id="visualizando-a-resposta-do-circuito">Visualizando a Resposta do Circuito</h1>
