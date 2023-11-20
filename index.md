@@ -1140,3 +1140,148 @@ Referências Bibliográficas
 - DE ARAÚJO, THABATTA M. A. - SLIDES E NOTAS DE AULAS - Disponível junto à profª Thabatta.
 
 </div>
+
+
+---
+
+# Determinar a Forma da Resposta Subamortecida a um Degrau no Circuito RLC Paralelo
+
+<div class="grid-element">
+
+## Introdução
+
+Determinar a resposta a um degrau Subamortecido de um circuito RLC em paralelo significa determinar a tensão nos ramos paralelos ou a corrente nos ramos individuais em que ambas as raízes sejam complexas.
+
+No nosso caso estudaremos quando ela se inicia em t = 0 e i = 0. Conforme t aumenta, nosso i também aumenta até se aproximar do i da fonte.
+
+</div>
+
+
+---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
+
+# Resposta ao Degrau de Circuito RLC
+
+<p align="center">
+<img src="./img/grupo4/cc2.png" width="500"/>
+</p>
+
+\\[ R = 625\Omega \\]
+
+1. A frequência angular de amortecimento \\( \omega_0 \\) é dada por:
+
+\\[ \omega_0^2 = \frac{1}{LC} = \frac{10^{12}}{25 \times 25} = 16 \times 10^8 \\]
+
+2. O coeficiente de amortecimento \\( \alpha \\) é dado por:
+
+\\[ \alpha = \frac{1}{2RC} = \frac{10^9}{2 \times 625 \times 25} = 3.2 \times 10^4 \text{ rad/s} \\]
+
+<p align="center">
+ou
+</p>
+
+\\[ \alpha^2 = 10.24 \times 10^8 \\]
+
+- Como \\( \alpha^2 < \omega_0^2 \\), as raízes da equação característica são complexas, o que indica uma resposta subamortecida.
+
+</div>
+
+
+---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
+
+# Resposta ao Degrau Subamortecida
+
+3. A frequência de oscilação amortecida \\( \omega_d \\) é calculada pela diferença entre a frequência natural não amortecida ao quadrado e o coeficiente de amortecimento ao quadrado:
+
+\\[ \omega_d = \sqrt{\omega_0^2 - \alpha^2} = \sqrt{16 \times 10^8 - 10,24 \times 10^8} = 24.000 \\]
+
+4. As raízes da equação característica são:
+
+\\[ s_1 = -\alpha + j\omega_d = -3,2 \times 10^4 + j2,4 \times 10^4 \text{ rad/s} \\]
+\\[ s_2 = -\alpha - j\omega_d = -3,2 \times 10^4 - j2,4 \times 10^4 \text{ rad/s} \\]
+
+- A corrente no indutor \\( i_L \\) como resposta ao degrau é dada por:
+
+  \\[ i_L = I_f + e^{-\alpha t} \left[ B'_1 \cos(\omega_d t) + B'_2 \sin(\omega_d t) \right] \\]
+
+</div>
+
+
+---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
+
+# Resposta ao Degrau Subamortecida
+
+- As condições iniciais para a corrente \\( i_L \\) no indutor são dadas por:
+
+  \\[ i_L(0) = I_f + B'_1 = 0 \\]
+
+  \\[ \frac{d i_L}{d t}(0) = \omega_d B'_2 -\alpha B'_1 = 0 \\]
+
+  Onde \\( B'\_1 \\) e \\( B'\_2 \\) são constantes a serem determinadas.
+
+- Resolvendo as condições iniciais, encontramos os valores de \\( B'\_1 \\) e \\( B'\_2 \\):
+
+  \\[ B'_1 = -24 \text{ mA} \\]
+
+  \\[ B'_2 = -32 \text{ mA} \\]
+
+- A expressão para a corrente \\( i_L(t) \\) com as constantes substituídas é:
+
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32 \sin(24.000t))e^{-32.000t} \text{ mA, t} \geq 0\\]
+
+</div>
+
+
+---
+
+<div class="grid-25 small">
+
+<div class="grid-element">
+
+# Resposta ao Degrau Subamortecida
+
+- A corrente no indutor \\( i_L(t) \\) como resposta ao degrau é dada pela expressão:
+
+  \\[ i_L(t) = 24 + (-24 \cos(24.000t) - 32\sin(24.000t))e^{-32.000t} \text{ mA} \\]
+
+- A seguir, um gráfico da corrente \\( i_L(t) \\) em função do tempo ilustrando a resposta ao degrau subamortecida.
+
+<p align="center">
+<img src="./img/grupo4/grupo4-img1.png" width="500"/> 
+</p>
+
+</div>
+
+
+---
+
+<div class="grid-25-25 small">
+
+<div class="grid-element">
+
+# Gráfico com os Três Tipos de Respostas: Superamortecido, Criticamente Amortecido e Subamortecido
+
+- O gráfico a seguir ilustra as diferentes respostas de um circuito RLC para diferentes valores de resistência \\( R \\):
+
+  - Superamortecido (\\( R = 400 \Omega \\))
+  - Criticamente amortecido (\\( R = 500 \Omega \\))
+  - Subamortecido (\\( R = 625 \Omega \\))
+
+- Cada curva mostra como a corrente no indutor \\( i_L \\) se comporta com o tempo após a aplicação de um degrau de tensão.
+
+<p align="center">
+<img src="./img/grupo4/grupo4-img3.png" width="500"/> 
+</p>
+
+</div>
